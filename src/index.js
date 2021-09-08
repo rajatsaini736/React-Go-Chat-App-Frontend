@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-let socket = new WebSocket("ws://localhost:8000/ws");
+// let socket = new WebSocket("ws://localhost:8000/ws");
+let socket = new WebSocket("ws://shrouded-ridge-25642.herokuapp.com/ws");
 
 let connect = (cb) => {
   console.log("Attempting Connection ... ");
