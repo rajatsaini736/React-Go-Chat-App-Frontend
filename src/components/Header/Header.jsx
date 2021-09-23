@@ -1,13 +1,18 @@
 import React from "react";
 import "./Header.scss";
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <div className="header">
-            <h2>Realtime Chat App</h2>
-            <h6>Developed by Rajat</h6>
-            <h6>Powered by React and GO</h6>
-        </div>
+        <Navbar bg="dark" variant="dark">
+            <Container>
+                <Navbar.Brand>Chat with Strangers as a Stranger</Navbar.Brand>
+                <Nav className="my-auto">
+                    <Nav.Link>Developed by Rajat</Nav.Link>
+                    <Nav.Link>Powered by ReactJS, Redux & Go</Nav.Link>
+                </Nav>
+            </Container>
+      </Navbar>
     )
 };
 
