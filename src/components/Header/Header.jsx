@@ -7,7 +7,7 @@ const Header = () => {
         <Container>
         <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
-            <Navbar.Brand>Stranger Chat as a Service </Navbar.Brand>
+            <Navbar.Brand>Stranger Chat as a Service</Navbar.Brand>
             <Navbar.Collapse className="justify-content-end">
                 <Nav>
                     <Nav.Link>
