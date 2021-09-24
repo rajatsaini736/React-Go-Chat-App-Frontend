@@ -8,17 +8,17 @@ const ChatHistory = (props) => {
     let {messages} = props;
 
     let DisplayMessages = () => messages.map((msg, index) => {
+        console.log(msg);
        return <ListGroup.Item><Message message={msg.data} /></ListGroup.Item>
     });
 
-    let chatBody = document.querySelector('#chat-history-body');
-    if (chatBody) {
-        chatBody.scrollTop = chatBody.scrollHeight;
-        chatBody.scrollTop += 300;
-        console.log(chatBody.scrollHeight);
-        console.log(chatBody.scrollTop);
-    }
-    console.log(chatBody);
+    setTimeout(() => {
+        let chatBody = document.querySelector('#chat-history-body');
+        if (chatBody) {
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+        console.log(chatBody);
+    }, 0);
 
     return (
         <Container className="my-5">
