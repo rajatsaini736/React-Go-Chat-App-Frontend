@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/React-Go-Chat-App-Frontend/static/css/main.9570307d.chunk.css",
-    "main.js": "/React-Go-Chat-App-Frontend/static/js/main.fb78e45a.chunk.js",
-    "main.js.map": "/React-Go-Chat-App-Frontend/static/js/main.fb78e45a.chunk.js.map",
-    "runtime-main.js": "/React-Go-Chat-App-Frontend/static/js/runtime-main.9bb374d9.js",
-    "runtime-main.js.map": "/React-Go-Chat-App-Frontend/static/js/runtime-main.9bb374d9.js.map",
-    "static/js/2.890c2f1a.chunk.js": "/React-Go-Chat-App-Frontend/static/js/2.890c2f1a.chunk.js",
-    "static/js/2.890c2f1a.chunk.js.map": "/React-Go-Chat-App-Frontend/static/js/2.890c2f1a.chunk.js.map",
-    "static/js/3.d6e7ddee.chunk.js": "/React-Go-Chat-App-Frontend/static/js/3.d6e7ddee.chunk.js",
-    "static/js/3.d6e7ddee.chunk.js.map": "/React-Go-Chat-App-Frontend/static/js/3.d6e7ddee.chunk.js.map",
+    "main.css": "/React-Go-Chat-App-Frontend/static/css/main.72b9e849.chunk.css",
+    "main.js": "/React-Go-Chat-App-Frontend/static/js/main.edbff593.chunk.js",
+    "main.js.map": "/React-Go-Chat-App-Frontend/static/js/main.edbff593.chunk.js.map",
+    "runtime-main.js": "/React-Go-Chat-App-Frontend/static/js/runtime-main.681665fb.js",
+    "runtime-main.js.map": "/React-Go-Chat-App-Frontend/static/js/runtime-main.681665fb.js.map",
+    "static/css/2.53150396.chunk.css": "/React-Go-Chat-App-Frontend/static/css/2.53150396.chunk.css",
+    "static/js/2.26b3fe47.chunk.js": "/React-Go-Chat-App-Frontend/static/js/2.26b3fe47.chunk.js",
+    "static/js/2.26b3fe47.chunk.js.map": "/React-Go-Chat-App-Frontend/static/js/2.26b3fe47.chunk.js.map",
+    "static/js/3.bfac8380.chunk.js": "/React-Go-Chat-App-Frontend/static/js/3.bfac8380.chunk.js",
+    "static/js/3.bfac8380.chunk.js.map": "/React-Go-Chat-App-Frontend/static/js/3.bfac8380.chunk.js.map",
     "index.html": "/React-Go-Chat-App-Frontend/index.html",
-    "static/css/main.9570307d.chunk.css.map": "/React-Go-Chat-App-Frontend/static/css/main.9570307d.chunk.css.map",
-    "static/js/2.890c2f1a.chunk.js.LICENSE.txt": "/React-Go-Chat-App-Frontend/static/js/2.890c2f1a.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/React-Go-Chat-App-Frontend/static/media/logo.6ce24c58.svg"
+    "static/css/2.53150396.chunk.css.map": "/React-Go-Chat-App-Frontend/static/css/2.53150396.chunk.css.map",
+    "static/css/main.72b9e849.chunk.css.map": "/React-Go-Chat-App-Frontend/static/css/main.72b9e849.chunk.css.map",
+    "static/js/2.26b3fe47.chunk.js.LICENSE.txt": "/React-Go-Chat-App-Frontend/static/js/2.26b3fe47.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bb374d9.js",
-    "static/js/2.890c2f1a.chunk.js",
-    "static/css/main.9570307d.chunk.css",
-    "static/js/main.fb78e45a.chunk.js"
+    "static/js/runtime-main.681665fb.js",
+    "static/css/2.53150396.chunk.css",
+    "static/js/2.26b3fe47.chunk.js",
+    "static/css/main.72b9e849.chunk.css",
+    "static/js/main.edbff593.chunk.js"
   ]
 }
