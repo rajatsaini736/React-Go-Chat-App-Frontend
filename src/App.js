@@ -61,12 +61,12 @@ function App(props) {
       {/* <NewComp/> */}
 
       {showLogin && 
-      <Container className="m-5">
+      <Container className="my-5">
         <Button variant="info" onClick={handlePutName}>PUT YOUR NAME</Button>
       </Container>}
       {
         !showLogin &&
-        <Container className="m-5">
+        <Container className="my-5">
           <Button variant="warning" onClick={HandleRemoveName}>Remove YOUR NAME</Button>
         </Container>
       }

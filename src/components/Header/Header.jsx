@@ -4,15 +4,28 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <Navbar bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand>Chat with Strangers as a Stranger</Navbar.Brand>
-                <Nav className="my-auto">
-                    <Nav.Link>Developed by Rajat</Nav.Link>
-                    <Nav.Link>Powered by ReactJS, Redux & Go</Nav.Link>
+        <Container>
+        <Navbar bg="dark" variant="dark" expand="lg">
+        <Container>
+            <Navbar.Brand>Chat with Strangers as a Stranger</Navbar.Brand>
+            <Navbar.Toggle />
+            <Navbar.Collapse className="justify-content-end">
+                <Nav>
+                    <Nav.Link>
+                        <Navbar.Text>
+                            Developed by <a>Rajat </a>
+                        </Navbar.Text>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Navbar.Text>
+                             Powered by ReactJS, Redux & Go
+                        </Navbar.Text>
+                    </Nav.Link>
                 </Nav>
-            </Container>
-      </Navbar>
+            </Navbar.Collapse>
+        </Container>
+        </Navbar>
+        </Container>
     )
 };
 

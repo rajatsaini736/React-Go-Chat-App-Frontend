@@ -30,7 +30,7 @@ const ChatInput = (props) => {
     }
 
     return (
-        <Container className="m-5">
+        <Container className="my-5">
             <Col md="6" className="mx-auto">
                 <div className="ChatInput">
                     <FormControl 

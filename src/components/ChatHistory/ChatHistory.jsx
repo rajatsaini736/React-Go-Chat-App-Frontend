@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroup, Container, Col } from "react-bootstrap";
+import { ListGroup, Container, Col, Row } from "react-bootstrap";
 import Message from "../Message";
 import "./ChatHistory.scss";
 import $ from 'jquery';
@@ -21,7 +21,8 @@ const ChatHistory = (props) => {
     console.log(chatBody);
 
     return (
-        <Container className="m-5">
+        <Container className="my-5">
+            <Row>
             <Col md="6" className="mx-auto">
                 <div className="ChatHistory">
                     <h2 className="p-3">Chat History</h2>
@@ -30,6 +31,7 @@ const ChatHistory = (props) => {
                     </ListGroup>
                 </div>
             </Col>
+            </Row>
         </Container>
     );
 };
