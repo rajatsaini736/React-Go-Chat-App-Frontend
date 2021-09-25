@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
-// let socket = new WebSocket("ws://localhost:8000/ws");
-let socket = new WebSocket("wss://shrouded-ridge-25642.herokuapp.com/ws");
+let socket = new WebSocket("ws://localhost:8000/ws");
+// let socket = new WebSocket("wss://shrouded-ridge-25642.herokuapp.com/ws");
 
 let connect = (cb) => {
   console.log("Attempting Connection ... ");

@@ -8,6 +8,7 @@ const Header = () => {
         <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
             <Navbar.Brand>Stranger Chat as a Service</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarScroll"/>
             <Navbar.Collapse className="justify-content-end">
                 <Nav>
                     <Nav.Link>

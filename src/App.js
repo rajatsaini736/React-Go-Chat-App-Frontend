@@ -35,11 +35,11 @@ function App(props) {
     connect(callBack);
   })
 
-  let send = (event) => {
-    if (event.keyCode === 13) {
-      sendMsg(JSON.stringify({user: userName, msg: event.target.value}));
-      event.target.value = "";
-    }
+  let send = (message) => {
+    // if (event.keyCode === 13) {
+      sendMsg(JSON.stringify({user: userName, msg: message}));
+      // event.target.value = "";
+    // }
   }
 
   const handlePutName = () => setToggleLogin(true);
@@ -56,9 +56,6 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-      <ChatHistory messages={msgList}/>
-      <ChatInput send={send}/>
-      {/* <NewComp/> */}
 
       {showLogin && 
       <Container className="my-5">
@@ -73,6 +70,10 @@ function App(props) {
       {
         toggleLogin && <UserLogin cancel={HandleCancelLogin}/>
       }
+      
+      <ChatHistory messages={msgList}/>
+      <ChatInput send={send}/>
+      {/* <NewComp/> */}
     </div>
   );
 }

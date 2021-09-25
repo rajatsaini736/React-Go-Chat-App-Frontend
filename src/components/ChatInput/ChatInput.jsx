@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { FormControl, InputGroup, Container, Col } from 'react-bootstrap';
+import { FormControl, InputGroup, Container, Col, Button, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import UserLogin from '../UserLogin';
 import './ChatInput.scss';
+import sendLogo from '../ChatInput/next.png';
 
 const ChatInput = (props) => {
     const login_later = useSelector(state => state.user.loginLater);
@@ -11,6 +12,7 @@ const ChatInput = (props) => {
     const [showLogin, setShowLogin] = useState(false);
     const [loginLater, setLoginLater] = useState(login_later);
     const [isLogin, setIsLogin] = useState(is_login);
+    const [message, setMessage] = useState('');
 
     useEffect(() => {
         setLoginLater(login_later);
@@ -20,10 +22,16 @@ const ChatInput = (props) => {
         setIsLogin(is_login);
     }, [is_login]);
     
-    const checkLogin = (event) => {
+    const inputMessage = (event) => {
+        setMessage(event.target.value);
+    }
+
+    const checkLogin = () => {
         if (isLogin || loginLater) {
             setShowLogin(false);
-            props.send(event);
+            props.send(message);
+            setMessage('');
+            document.getElementById('msg').value = '';
         } else {
             setShowLogin(true);
         }
@@ -31,17 +39,23 @@ const ChatInput = (props) => {
 
     return (
         <Container className="my-5">
-            <Col md="6" className="mx-auto">
-                <div className="ChatInput">
-                    <FormControl 
-                        placeholder="Type a message... and Hit enter to send"
-                        aria-label="message"
-                        onKeyDown={(event)=>checkLogin(event)}
-                    />
-                    {/* <input onKeyDown={(event) => checkLogin(event)} placeholder="Type a message... Hit Enter to Send"/> */}
-                    {showLogin && <UserLogin/>}
-                </div>
-            </Col>
+            <Row className="justify-content-center pe-0">
+                <Col xs="10" md="5" className="text-end">
+                    <div className="ChatInput">
+                        <FormControl 
+                            id="msg"
+                            placeholder="Type a message..."
+                            aria-label="message"
+                            onKeyDown={(event)=>inputMessage(event)}
+                            />
+                        {/* <input onKeyDown={(event) => checkLogin(event)} placeholder="Type a message... Hit Enter to Send"/> */}
+                        {showLogin && <UserLogin/>}
+                    </div>
+                </Col>
+                <Col xs="2" md="1" className="text-start" onClick={checkLogin}>
+                    <img src={sendLogo} style={{maxWidth:"45px"}}/>
+                </Col>
+            </Row>
         </Container>
     );
 };
