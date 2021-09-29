@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Go-Chat-App-Frontend/static/css/main.72b9e849.chunk.css",
-    "main.js": "/React-Go-Chat-App-Frontend/static/js/main.aef704fe.chunk.js",
-    "main.js.map": "/React-Go-Chat-App-Frontend/static/js/main.aef704fe.chunk.js.map",
+    "main.js": "/React-Go-Chat-App-Frontend/static/js/main.f4481ede.chunk.js",
+    "main.js.map": "/React-Go-Chat-App-Frontend/static/js/main.f4481ede.chunk.js.map",
     "runtime-main.js": "/React-Go-Chat-App-Frontend/static/js/runtime-main.681665fb.js",
     "runtime-main.js.map": "/React-Go-Chat-App-Frontend/static/js/runtime-main.681665fb.js.map",
     "static/css/2.53150396.chunk.css": "/React-Go-Chat-App-Frontend/static/css/2.53150396.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.53150396.chunk.css",
     "static/js/2.26b3fe47.chunk.js",
     "static/css/main.72b9e849.chunk.css",
-    "static/js/main.aef704fe.chunk.js"
+    "static/js/main.f4481ede.chunk.js"
   ]
 }

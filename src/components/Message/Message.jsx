@@ -5,7 +5,6 @@ import './Message.scss';
 const Message = (props) => {
     const [message, setMessage] = useState(JSON.parse(props.message));
 
-    console.log(message);
     let msgPrint;
     if (message.body) {
         msgPrint = JSON.parse(message.body);

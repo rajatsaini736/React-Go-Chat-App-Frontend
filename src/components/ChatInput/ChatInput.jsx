@@ -24,6 +24,10 @@ const ChatInput = (props) => {
     
     const inputMessage = (event) => {
         setMessage(event.target.value);
+
+        if(event.keyCode === 13) {
+            checkLogin();
+        }
     }
 
     const checkLogin = () => {
@@ -46,7 +50,7 @@ const ChatInput = (props) => {
                             id="msg"
                             placeholder="Type a message..."
                             aria-label="message"
-                            onKeyDown={(event)=>inputMessage(event)}
+                            onKeyUp={(event)=>inputMessage(event)}
                             />
                         {/* <input onKeyDown={(event) => checkLogin(event)} placeholder="Type a message... Hit Enter to Send"/> */}
                         {showLogin && <UserLogin/>}

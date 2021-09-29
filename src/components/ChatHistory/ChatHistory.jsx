@@ -8,7 +8,6 @@ const ChatHistory = (props) => {
     let {messages} = props;
 
     let DisplayMessages = () => messages.map((msg, index) => {
-        console.log(msg);
        return <ListGroup.Item><Message message={msg.data} /></ListGroup.Item>
     });
 
@@ -17,7 +16,6 @@ const ChatHistory = (props) => {
         if (chatBody) {
             chatBody.scrollTop = chatBody.scrollHeight;
         }
-        console.log(chatBody);
     }, 0);
 
     return (
